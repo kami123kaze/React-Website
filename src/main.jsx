@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './components/home/Home'
 import './index.css'
 import Layout from './Layout'
+import PasswordGenerator from './components/passGen/Password-Generator'
 
 
 const router = createBrowserRouter([
@@ -16,7 +17,8 @@ const router = createBrowserRouter([
       element: <Home/> 
     },
     {
-
+     path: "/Password-Generator",
+     element: <PasswordGenerator/>
     }
    ]
   }
